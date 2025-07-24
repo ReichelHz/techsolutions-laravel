@@ -1,61 +1,54 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
+# Techsolutions Laravel - Sistema de Gestión de Proyectos
 
-<p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+## Descripción
 
-## About Laravel
+Este proyecto es una aplicación web desarrollada con Laravel para la gestión de proyectos, creada como parte de la Evaluación Sumativa Unidad 1. La aplicación permite realizar operaciones CRUD (crear, leer, actualizar y eliminar) sobre proyectos, mostrando además el valor actualizado de la Unidad de Fomento (UF) consultado desde una API externa.
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+## Funcionalidades principales
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+- Listar todos los proyectos.
+- Crear un nuevo proyecto.
+- Editar proyectos existentes.
+- Eliminar proyectos.
+- Mostrar detalles de un proyecto.
+- Mostrar el valor actual de la UF en la vista principal.
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+## Tecnologías utilizadas
 
-## Learning Laravel
+- PHP 8.2
+- Laravel Framework (coloca la versión que uses)
+- MySQL / MariaDB para la base de datos
+- Composer para gestión de dependencias
+- Git para control de versiones
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+## Instalación
 
-You may also try the [Laravel Bootcamp](https://bootcamp.laravel.com), where you will be guided through building a modern Laravel application from scratch.
+Clona el repositorio con:
+git clone https://github.com/ReichelHz/techsolutions-laravel.git
+Entra a la carpeta del proyecto con: cd techsolutions-laravel
+Instala las dependencias con Composer: composer install
+Copia el archivo de configuración de entorno y edítalo si es necesario para configurar la base de datos: cp .env.example .env
+Genera la clave de la aplicación: php artisan key:generate
+Ejecuta las migraciones para crear las tablas en la base de datos: php artisan migrate
+Levanta el servidor local: php artisan serve
+Abre en tu navegador la URL: http://localhost:8000
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains thousands of video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+## Uso
 
-## Laravel Sponsors
+- Navega por la aplicación para ver la lista de proyectos.
+- Puedes crear, editar, eliminar y ver detalles de proyectos.
+- En la página principal, se muestra el valor actualizado de la Unidad de Fomento (UF).
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the [Laravel Partners program](https://partners.laravel.com).
+## Autor
 
-### Premium Partners
+- María José Reichel Hernández
+- Sebastián Lagos Hernández
 
-- **[Vehikl](https://vehikl.com)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel)**
-- **[DevSquad](https://devsquad.com/hire-laravel-developers)**
-- **[Redberry](https://redberry.international/laravel-development)**
-- **[Active Logic](https://activelogic.com)**
+## Licencia
 
-## Contributing
+Este proyecto es parte de una evaluación académica y no está bajo ninguna licencia pública.
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
 
-## Code of Conduct
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
 
-## Security Vulnerabilities
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
-
-## License
-
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
